@@ -307,6 +307,14 @@ stateAbrv = None  # Get the abbreviation from the dictionary
 # Replace "stateFullName" in "stateCapital" with "stateAbrv"
 print(stateCapital)
 
+# len() -- Again!
+# Remember how you could use len() to determine the length of a string? You can also use it to determine the
+# length of lists, sets and dictionaries.
+print(len(floatList))     # Length of a list
+print(len(allAnimals))    # Length of a set
+print(len(myDictionary))  # Length of a dictionary
+
+
 ############################
 # if/elif & Boolean Logic  #
 ############################
@@ -434,6 +442,14 @@ for line in strings:  # Move sequentially through each element in "strings"
         print(line)  # If the function returns a true value, print the current line
 
 
+# Encapsulation
+# The concept of encapsulation is to put all code that is used for a specific task inside a function and to have no
+# code related to that task outside of the function. Combined with clear function names, this creates a "black box"
+# system that makes code in large projects more readable and usable. With clear function names, other programmers
+# (or you in the future, when you've forgotten how you structured your code) can use your code without needing to worry
+# about the code inside the function. It also means you'll be able to easily skim the structure of a large project
+# and get the gist of what's going on more easily.
+
 # CHALLENGE
 # Write a function that replaces every multiple of 5 with "fizz" and every even number
 # that is not a multiple of 5 with "buzz"
@@ -446,4 +462,3 @@ def fizz_buzz(input_list):
 sampleList = [1, 3, 5, 8, 14, 15, 23, 29, 30, 34, 37]
 sampleList = fizz_buzz(sampleList)
 print(sampleList)
-
