@@ -161,8 +161,8 @@ val = intVal
 print(val)
 # But changing "intVal" won't change "val"
 # This is because the assignment occurs "by value" as opposed to "by reference"
-val = 22
-print(intVal)
+intVal = 22
+print(val)
 
 ############################
 #     Operator Types       #
